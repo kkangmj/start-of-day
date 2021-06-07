@@ -3,7 +3,7 @@ const input= form.querySelector("input");
 const greeting = document.querySelector(".js-greeting");
 
 const USER_LS = "USERNAME";
-const SHOWING_CN = "showing";
+const SHOWING_FORM_CN = "showing-form";
 const SHOWING_NAME_CN = "showing-name";
 
 function init(){
@@ -24,7 +24,7 @@ function handleSubmit(event){
 }
 
 function askForName(){
-    form.classList.add(SHOWING_CN);
+    form.classList.add(SHOWING_FORM_CN);
     form.addEventListener("submit", handleSubmit);
 }
 
@@ -50,8 +50,8 @@ function checkGreetingKeyword(){
 }
 
 function paintGreeting(text){
-    form.classList.remove(SHOWING_CN);
-    greeting.classList.add(SHOWING_CN, SHOWING_NAME_CN);
+    form.classList.remove(SHOWING_FORM_CN);
+    greeting.classList.add(SHOWING_NAME_CN);
     const greetingWord = checkGreetingKeyword();
     greeting.innerText = `${greetingWord} ${text}`;
 }
