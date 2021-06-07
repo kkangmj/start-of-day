@@ -1,5 +1,6 @@
 body{
     background-color:darkslategrey;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .clock {
@@ -14,11 +15,14 @@ body{
 
 #hour, #minute {
     padding: 0px 10px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 #divider{
     animation: blink-effect 1s step-end infinite;
+    margin-right: 10px;
+    margin-left: 10px;
+    
 }
 
 @keyframes blink-effect {
@@ -32,38 +36,21 @@ body{
     display: none;
 }
 
-.showing{
+.showing-name{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.showing-name{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: white;
     font-size: 50px;
 }
 
 *, *:before, *:after { box-sizing: inherit; }
+.form-input { border-style: none; background: transparent; outline: none; }
+.form-submit{ padding: 0; background: none; border: none; outline: none; }
 
-.form-input{
-    border-style: none;
-    background: transparent;
-    outline: none;
-}
-
-.form-button{
-    padding: 0;
-    background: none;
-    border: none;
-    outline: none;
-}
-
-@keyframes gradient { 
-    0%{background-position:0 0}
-    100%{background-position:100% 0}
-}
-
-.form{
+.showing-form{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -71,10 +58,12 @@ body{
     max-width: 400px;
     margin: 0 auto;
     border-radius: 2px;
-    padding: 1.4rem 2rem 1.6rem;
+    padding: 10px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.form:after{
+.showing-form:after{
     content: "";
     position: absolute;
     left: 0px;
@@ -90,18 +79,31 @@ body{
     animation: gradient 3s linear infinite;
 }
 
-.form input{
+.form-input{
     flex-grow: 1;
     font-size: 1.8rem;
     line-height: 2.4rem;
     vertical-align: middle;
+    color: #BFD2FF;
 }
 
-.form button{
-    font-size: 2.4rem;
+.form-input::placeholder{
+    color: #7881A1;
+}
+
+.form-submit{
+    color: #7881A1;
+    height: 40px;
+    width: 40px;
+    font-size: 2.0rem;
     line-height: 2.4rem;
     vertical-align: middle;
     transition: color .25s;
+}
+
+@keyframes gradient { 
+    0%{background-position:0 0}
+    100%{background-position:100% 0}
 }
 
 .bgImage{
