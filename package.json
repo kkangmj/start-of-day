@@ -1,0 +1,12 @@
+{
+  "name": "start-of-day",
+  "version": "1.0.0",
+  "repository": "https://github.com/kkangmj/start-of-day",
+  "author": "mingzz",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.1.2"
+  }
+}
