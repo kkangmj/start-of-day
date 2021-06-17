@@ -32,7 +32,8 @@ body {
 }
 
 .form,
-.greeting {
+.greeting,
+.toDo {
   display: none;
 }
 
@@ -51,12 +52,14 @@ body {
 *:after {
   box-sizing: inherit;
 }
-.form-input {
+.form-input,
+.toDo-input {
   border-style: none;
   background: transparent;
   outline: none;
 }
-.form-submit {
+.form-submit,
+.toDo-submit {
   padding: 0;
   background: none;
   border: none;
@@ -76,7 +79,20 @@ body {
   margin-bottom: 50px;
 }
 
-.showing-form:after {
+.toDoForm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.showing-form:after,
+.toDoForm:after {
   content: '';
   position: absolute;
   left: 0px;
@@ -92,7 +108,8 @@ body {
   animation: gradient 3s linear infinite;
 }
 
-.form-input {
+.form-input,
+.toDo-input {
   flex-grow: 1;
   font-size: 1.8rem;
   line-height: 2.4rem;
@@ -100,11 +117,13 @@ body {
   color: #bfd2ff;
 }
 
-.form-input::placeholder {
+.form-input::placeholder,
+.toDo-input::placeholder {
   color: #7881a1;
 }
 
-.form-submit {
+.form-submit,
+.toDo-submit {
   color: #7881a1;
   height: 40px;
   width: 40px;
@@ -112,6 +131,24 @@ body {
   line-height: 2.4rem;
   vertical-align: middle;
   transition: color 0.25s;
+}
+
+.showing-toDo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toDoForm {
+  display: flex;
+  justify-content: center;
+}
+
+.toDoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @keyframes gradient {

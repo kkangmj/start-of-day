@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Momentum</title> 
-        <meta charset = "utf-8" />
-        <link rel = "stylesheet" href = "index.css"/>
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-    </head>
-    <body>
-        <div></div>
-        <div class = "js-clock clock">
-            <span id="hour">00</span><span id="divider">:</span><span id="minute">00</span>
-        </div>
-        <form class = "js-form form">
-            <input type = "text" class = "form-input" placeholder="What is your name?"/>
-            <button type="submit" class = "form-submit"><i class="fas fa-arrow-right"></i></button>
+
+<head>
+    <title>Momentum</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+
+<body>
+    <div></div>
+    <div class="js-clock clock">
+        <span id="hour">00</span><span id="divider">:</span><span id="minute">00</span>
+    </div>
+    <form class="js-form form">
+        <input type="text" class="form-input" placeholder="What is your name?" />
+        <button type="submit" class="form-submit"><i class="fas fa-arrow-right"></i></button>
+    </form>
+    <h4 class="js-greeting greeting"></h4>
+    <div class="js-toDo toDo">
+        <form class="js-toDoForm toDoForm">
+            <input type="text" class="toDo-input" placeholder="Write a to do" />
+            <button type="submit" class="toDo-submit"><i class="fas fa-arrow-right"></i></button>
         </form>
-        <h4 class = "js-greeting greeting"></h4>
-        <form class = "js-toDoForm">
-            <input type = "text" placeholder="Write a to do"/>
-        </form>
-        <ul class = "js-toDoList">
-            <li id = "0"> alalal </li>
+        <ul class="js-toDoList toDoList">
         </ul>
-        <span class = "js-weather"></span>
-        <script src = "clock.js"></script>
-        <script src = "greeting.js"></script>
-        <script src = "todo.js"></script>
-        <script src = "bg.js"></script>
-        <script src = "weather.js"></script>
-    </body>
+    </div>
+    <span class="js-weather"></span>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+
 </html>
