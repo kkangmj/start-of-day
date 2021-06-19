@@ -2,12 +2,11 @@
   "name": "start-of-day",
   "version": "1.0.0",
   "repository": "https://github.com/kkangmj/start-of-day",
-  "homepage": "https://kkangmj.github.io/start-of-day",
+  "homepage": ".",
   "author": "mingzz",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "predeploy": "parcel build ./src/index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "parcel build ./src/index.html"
   },
   "devDependencies": {
     "eslint": "^7.2.0",

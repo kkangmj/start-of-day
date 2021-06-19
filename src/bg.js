@@ -1,3 +1,9 @@
+const IMAGE = [
+  'https://cdn.pixabay.com/photo/2021/06/01/06/24/old-town-6300696_1280.jpg',
+  'https://cdn.pixabay.com/photo/2021/06/11/14/01/sea-6328687_1280.jpg',
+  'https://cdn.pixabay.com/photo/2021/06/13/07/33/mountain-pass-6332476_1280.jpg',
+];
+
 const body = document.querySelector('body');
 const IMG_NUMBER = 3;
 
@@ -7,8 +13,9 @@ const IMG_NUMBER = 3;
 // }
 
 function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `D://DevProjects/Vanilla JS_Momentum/src/assets/image/photo${imgNumber}.jpg`;
+  const image = document.createElement('img');
+  // image.src = require(`./assets/image/photo${imgNumber}.jpg`);
+  image.src = IMAGE[imgNumber-1];
   image.classList.add('bgImage');
   body.appendChild(image);
   // image.addEventListener("loadend", handleImgLoad);

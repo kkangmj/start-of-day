@@ -1,0 +1,2 @@
+!function(){const o=["https://cdn.pixabay.com/photo/2021/06/01/06/24/old-town-6300696_1280.jpg","https://cdn.pixabay.com/photo/2021/06/11/14/01/sea-6328687_1280.jpg","https://cdn.pixabay.com/photo/2021/06/13/07/33/mountain-pass-6332476_1280.jpg"],t=document.querySelector("body");!function(a){const n=document.createElement("img");n.src=o[a-1],n.classList.add("bgImage"),t.appendChild(n)}(Math.floor(3*Math.random())+1)}();
+//# sourceMappingURL=index.d12f758b.js.map
