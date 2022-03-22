@@ -1,10 +1,20 @@
-## Start Of Day
+# **Start Of Day**
 
-Nomad Coder의 Vanilla JS 강의를 다시 들으며 2주 챌린지를 진행 중!
+<p align="center">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/52561963/159399855-d5dba9e7-a494-4872-b814-df442ffc7948.png">
+</p>
+
+<p align="center">
+<u>https://objective-banach-966842.netlify.app/</u>
+</p>
+ 
+<br>
+
+Nomad Coder의 Vanilla JS 강의 + 2주 챌린지 결과물
+  
 두 달 전에 한 번 듣긴 했는데 이번에 복습 겸 2주 챌린지로 다시 진행 중이다.
 ReactJS 챌린지에 비하면 매일 들어야 하는 강의도 양이 많지 않고 코딩 과제도 한 두시간 잡다 보면 해결할 수 있다.
 
-현재는 Day 12
 
 ### What I've submitted
 
